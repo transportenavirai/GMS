@@ -330,7 +330,7 @@ function renderPlantao() {
 const ref = new Date(now);
 if(h < 6) ref.setDate(ref.getDate() - 1);
 const dia = ref.getDate();
-  document.getElementById("dateHoje").textContent = DIAS_F[now.getDay()]+", "+String(dia).padStart(2,"0")+"/"+String(now.getMonth()+1).padStart(2,"0")+"/"+now.getFullYear();
+  document.getElementById("dateHoje").textContent = DIAS_F[ref.getDay()]+", "+String(dia).padStart(2,"0")+"/"+String(ref.getMonth()+1).padStart(2,"0")+"/"+ref.getFullYear();
   document.getElementById("dateSub").textContent  = MES_LABEL+" · "+MOTORISTAS.length+" motoristas";
   document.getElementById("tsLbl").textContent    = "🔄 "+now.toLocaleTimeString("pt-BR");
 
