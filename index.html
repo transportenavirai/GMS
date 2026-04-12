@@ -92,7 +92,12 @@
     <div class="card">
       <div class="card-hd">
         <h3>🚐 VIAGENS DE ONTEM E HOJE</h3>
-        <span id="vSubtitle">--</span>
+        <div style="display:flex;align-items:center;gap:6px">
+          <button class="vfiltro-btn active" id="vfHoje"   onclick="filtroViagens('hoje')">● Hoje</button>
+          <button class="vfiltro-btn"        id="vfOntem"  onclick="filtroViagens('ontem')">Ontem</button>
+          <button class="vfiltro-btn"        id="vfTodos"  onclick="filtroViagens('todos')">Todos</button>
+          <span id="vSubtitle" style="font-size:11px;color:var(--muted);margin-left:4px">--</span>
+        </div>
       </div>
       <div class="log-toolbar">
         <input class="viagens-search" id="viagensSearch" type="text" placeholder="🔍  Buscar motorista, destino, placa...">
